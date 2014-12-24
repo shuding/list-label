@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title></title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-align: center;
+    }
+    ul.ll-list {
+      max-width: 300px;
+      padding: 0;
+      margin: 30px auto;
+      list-style: none;
+      border: 1px solid black;
+      text-align: left;
+      overflow-x: hidden;
+    }
+    li {
+      padding-left: 1em;
+    }
+    li.ll-label {
+      width: 100%;
+      border-bottom: 1px solid grey;
+      background-color: white;
+    }
+    code {
+      display: inline-block;
+      line-height: 1em;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h2>Demo for listlabel<a href="http://github.com/quietshu/listlabel" target="_blank"><sup><small>GitHub</small></sup></a></h2>
+  <ul class="ll-list">
+    <li class="ll-label">A</li>
+    <li>Afghanistan</li>
+    <li>Albania</li>
+    <li>Algeria</li>
+    <li>Andorra</li>
+    <li>Angola</li>
+    <li>Antigua and Barbuda</li>
+    <li>Argentina</li>
+    <li>Armenia</li>
+    <li>Aruba</li>
+    <li>Australia</li>
+    <li>Austria</li>
+    <li>Azerbaijan</li>
+    <li class="ll-label">B</li>
+    <li>Bahamas, The</li>
+    <li>Bahrain</li>
+    <li>Bangladesh</li>
+    <li>Barbados</li>
+    <li>Belarus</li>
+    <li>Belgium</li>
+    <li>Belize</li>
+    <li>Benin</li>
+    <li>Bhutan</li>
+    <li>Bolivia</li>
+    <li>Bosnia and Herzegovina</li>
+    <li>Botswana</li>
+    <li>Brazil</li>
+    <li>Brunei</li>
+    <li>Bulgaria</li>
+    <li>Burkina Faso</li>
+    <li>Burma</li>
+    <li>Burundi</li>
+    <li class="ll-label">C</li>
+    <li>Cambodia</li>
+    <li>Cameroon</li>
+    <li>Canada</li>
+    <li>Cape Verde</li>
+    <li>Central African Republic</li>
+    <li>Chad</li>
+    <li>Chile</li>
+    <li>China</li>
+    <li>Colombia</li>
+    <li>Comoros</li>
+    <li>Congo, Democratic Republic of the</li>
+    <li>Congo, Republic of the</li>
+    <li>Costa Rica</li>
+    <li>Cote d'Ivoire</li>
+    <li>Croatia</li>
+    <li>Cuba</li>
+    <li>Curacao</li>
+    <li>Cyprus</li>
+    <li>Czech Republic</li>
+    <li class="ll-label">D</li>
+    <li>Denmark</li>
+    <li>Djibouti</li>
+    <li>Dominica</li>
+    <li>Dominican Republic</li>
+    <li class="ll-label">E</li>
+    <li>East Timor (see Timor-Leste)</li>
+    <li>Ecuador</li>
+    <li>Egypt</li>
+    <li>El Salvador</li>
+    <li>Equatorial Guinea</li>
+    <li>Eritrea</li>
+    <li>Estonia</li>
+    <li>Ethiopia</li>
+    <li class="ll-label">F</li>
+    <li>Fiji</li>
+    <li>Finland</li>
+    <li>France</li>
+    <li class="ll-label">G</li>
+    <li>Gabon</li>
+    <li>Gambia, The</li>
+    <li>Georgia</li>
+    <li>Germany</li>
+    <li>Ghana</li>
+    <li>Greece</li>
+    <li>Grenada</li>
+    <li>Guatemala</li>
+    <li>Guinea</li>
+    <li>Guinea-Bissau</li>
+    <li>Guyana</li>
+    <li class="ll-label">H</li>
+    <li>Haiti</li>
+    <li>Holy See</li>
+    <li>Honduras</li>
+    <li>Hong Kong</li>
+    <li>Hungary</li>
+    <li class="ll-label">I</li>
+    <li>Iceland</li>
+    <li>India</li>
+    <li>Indonesia</li>
+    <li>Iran</li>
+    <li>Iraq</li>
+    <li>Ireland</li>
+    <li>Israel</li>
+    <li>Italy</li>
+    <li class="ll-label">J</li>
+    <li>Jamaica</li>
+    <li>Japan</li>
+    <li>Jordan</li>
+    <li class="ll-label">K</li>
+    <li>Kazakhstan</li>
+    <li>Kenya</li>
+    <li>Kiribati</li>
+    <li>Korea, North</li>
+    <li>Korea, South</li>
+    <li>Kosovo</li>
+    <li>Kuwait</li>
+    <li>Kyrgyzstan</li>
+    <li class="ll-label">L</li>
+    <li>Laos</li>
+    <li>Latvia</li>
+    <li>Lebanon</li>
+    <li>Lesotho</li>
+    <li>Liberia</li>
+    <li>Libya</li>
+    <li>Liechtenstein</li>
+    <li>Lithuania</li>
+    <li>Luxembourg</li>
+    <li class="ll-label">M</li>
+    <li>Macau</li>
+    <li>Macedonia</li>
+    <li>Madagascar</li>
+    <li>Malawi</li>
+    <li>Malaysia</li>
+    <li>Maldives</li>
+    <li>Mali</li>
+    <li>Malta</li>
+    <li>Marshall Islands</li>
+    <li>Mauritania</li>
+    <li>Mauritius</li>
+    <li>Mexico</li>
+    <li>Micronesia</li>
+    <li>Moldova</li>
+    <li>Monaco</li>
+    <li>Mongolia</li>
+    <li>Montenegro</li>
+    <li>Morocco</li>
+    <li>Mozambique</li>
+    <li class="ll-label">N</li>
+    <li>Namibia</li>
+    <li>Nauru</li>
+    <li>Nepal</li>
+    <li>Netherlands</li>
+    <li>Netherlands Antilles</li>
+    <li>New Zealand</li>
+    <li>Nicaragua</li>
+    <li>Niger</li>
+    <li>Nigeria</li>
+    <li>North Korea</li>
+    <li>Norway</li>
+    <li class="ll-label">O</li>
+    <li>Oman</li>
+    <li class="ll-label">P</li>
+    <li>Pakistan</li>
+    <li>Palau</li>
+    <li>Palestinian Territories</li>
+    <li>Panama</li>
+    <li>Papua New Guinea</li>
+    <li>Paraguay</li>
+    <li>Peru</li>
+    <li>Philippines</li>
+    <li>Poland</li>
+    <li>Portugal</li>
+    <li class="ll-label">Q</li>
+    <li>Qatar</li>
+    <li class="ll-label">R</li>
+    <li>Romania</li>
+    <li>Russia</li>
+    <li>Rwanda</li>
+    <li class="ll-label">S</li>
+    <li>Saint Kitts and Nevis</li>
+    <li>Saint Lucia</li>
+    <li>Saint Vincent and the Grenadines</li>
+    <li>Samoa</li>
+    <li>San Marino</li>
+    <li>Sao Tome and Principe</li>
+    <li>Saudi Arabia</li>
+    <li>Senegal</li>
+    <li>Serbia</li>
+    <li>Seychelles</li>
+    <li>Sierra Leone</li>
+    <li>Singapore</li>
+    <li>Sint Maarten</li>
+    <li>Slovakia</li>
+    <li>Slovenia</li>
+    <li>Solomon Islands</li>
+    <li>Somalia</li>
+    <li>South Africa</li>
+    <li>South Korea</li>
+    <li>South Sudan</li>
+    <li>Spain</li>
+    <li>Sri Lanka</li>
+    <li>Sudan</li>
+    <li>Suriname</li>
+    <li>Swaziland</li>
+    <li>Sweden</li>
+    <li>Switzerland</li>
+    <li>Syria</li>
+    <li class="ll-label">T</li>
+    <li>Taiwan</li>
+    <li>Tajikistan</li>
+    <li>Tanzania</li>
+    <li>Thailand</li>
+    <li>Timor-Leste</li>
+    <li>Togo</li>
+    <li>Tonga</li>
+    <li>Trinidad and Tobago</li>
+    <li>Tunisia</li>
+    <li>Turkey</li>
+    <li>Turkmenistan</li>
+    <li>Tuvalu</li>
+    <li class="ll-label">U</li>
+    <li>Uganda</li>
+    <li>Ukraine</li>
+    <li>United Arab Emirates</li>
+    <li>United Kingdom</li>
+    <li>Uruguay</li>
+    <li>Uzbekistan</li>
+    <li class="ll-label">V</li>
+    <li>Vanuatu</li>
+    <li>Venezuela</li>
+    <li>Vietnam</li>
+    <li class="ll-label">Y</li>
+    <li>Yemen</li>
+    <li class="ll-label">Z</li>
+    <li>Zambia</li>
+    <li>Zimbabwe</li>
+  </ul>
+
+  <h2>The Code</h2>
+  <code><pre>
+&lt;ul class=&quot;ll-list&quot;&gt;<br/>
+  &lt;li class=&quot;ll-label&quot;&gt;A&lt;/li&gt;<br/>
+  &lt;li&gt;Afghanistan&lt;/li&gt;<br/>
+  &lt;li&gt;Albania&lt;/li&gt;<br/>
+  &lt;li&gt;Angola&lt;/li&gt;<br/>
+  &lt;li class=&quot;ll-label&quot;&gt;B&lt;/li&gt;<br/>
+  &lt;li&gt;Bahamas, The&lt;/li&gt;<br/>
+  &lt;li&gt;Bahrain&lt;/li&gt;<br/>
+  &lt;li&gt;Belarus&lt;/li&gt;<br/>
+  &lt;li class=&quot;ll-label&quot;&gt;C&lt;/li&gt;<br/>
+  &lt;li&gt;Cambodia&lt;/li&gt;<br/>
+  &lt;li&gt;Cameroon&lt;/li&gt;<br/>
+  &lt;li&gt;Chad&lt;/li&gt;<br/>
+  ...<br/>
+&lt;/ul&gt;<br/><br/>
+&lt;script src=&quot;src/listlabel.js&quot;&gt;&lt;/script&gt;<br/>
+&lt;script&gt;<br/>
+  listlabel(&quot;.ll-list&quot;);<br/>
+&lt;/script&gt;
+  </pre></code>
+  <script src="src/listlabel.js"></script>
+  <script>
+    listlabel(".ll-list");
+  </script>
+</body>
+</html>
