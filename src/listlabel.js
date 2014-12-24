@@ -2,7 +2,7 @@
  * Created by shuding on 12/24/14.
  *
  * <ds303077135@gmail.com>
- * http://github.com/quietshu/listlabel
+ * http://github.com/quietshu/list-label
  *
  * The MIT License
  */
@@ -94,6 +94,8 @@
                     },
                     inherit: function () {
                         element.style.top = "inherit";
+
+                        return this;
                     },
                     init: function () {
                         element.style.position = "absolute";
@@ -130,7 +132,7 @@
                     return this;
                 },
                 bindScroll: function() {
-                    element.onscroll = function () {
+                    element.onscroll = element.ontouchmove = function () {
                         var scrollTop = element.scrollTop;
 
                         for (var i = 0; i < labels.length; ++i) {
@@ -139,8 +141,9 @@
                                     if (i < labels.length && labels[i].height() + scrollTop > labels[i + 1].top()) {
                                         labels[i].top(labels[i + 1].top() - labels[i].height());
                                     }
-                                    else
+                                    else {
                                         labels[i].top(scrollTop);
+                                    }
                                 }
                             }
                             else {
@@ -153,9 +156,10 @@
                 },
                 init: function () {
                     // Container styles
-                    element.style.height    = selector.defaultListHeight + "px";
-                    element.style.position  = "relative";
-                    element.style.overflowY = "scroll";
+                    element.style.height                        = selector.defaultListHeight + "px";
+                    element.style.position                      = "relative";
+                    element.style.overflow                      = "scroll";
+                    element.style["-webkit-overflow-scrolling"] = "touch";
 
                     // Get all labels and bind scroll event
                     return this.refreshLabels().bindScroll();
