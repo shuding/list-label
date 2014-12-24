@@ -17,10 +17,9 @@
       list-style: none;
       border: 1px solid black;
       text-align: left;
-      overflow-x: hidden;
     }
     li {
-      padding-left: 1em;
+      text-indent: 1em;
     }
     li.ll-label {
       width: 100%;
@@ -287,12 +286,18 @@
 &lt;/ul&gt;<br/><br/>
 &lt;script src=&quot;src/listlabel.js&quot;&gt;&lt;/script&gt;<br/>
 &lt;script&gt;<br/>
-  listlabel(&quot;.ll-list&quot;);<br/>
+  listlabel(&quot;.ll-list&quot;, {
+      height: 300,
+      showIndex: true
+  });<br/>
 &lt;/script&gt;
   </pre></code>
   <script src="src/listlabel.js"></script>
   <script>
-    listlabel(".ll-list");
+    listlabel(".ll-list", {
+      height: 300,
+      showIndex: false
+    });
   </script>
 </body>
 </html>
